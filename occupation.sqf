@@ -237,7 +237,35 @@ _missionAIUnits =
 ];
 
 // Define the group reinforcements
-_groupReinforcementsInfo = [];
+_groupReinforcementsInfo = 
+[
+    [
+		_group,			// pass the group (again)
+		[
+			[
+				-1,		// Let's limit number of units instead...
+				0
+			],
+			[
+				100,	// Maximum 100 units can be given as reinforcements.
+				0
+			]
+		],
+		[
+			180,		// About a 4 minute delay between reinforcements.
+			diag_tickTime
+		],
+		_AISoldierSpawnLocations,
+		"random",
+		_difficulty,
+		_side,
+		"reinforce",
+		[
+			10,			// Reinforcements will only trigger if there's fewer than 10 members left in the group
+			7			// 7 reinforcement units per wave.
+		]
+	]
+];
 
 // Define mission-spawned objects and loot values
 _missionObjs =
