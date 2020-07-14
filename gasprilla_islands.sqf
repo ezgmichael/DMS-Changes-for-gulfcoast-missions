@@ -127,7 +127,7 @@ _heliClass	=	["Exile_Chopper_Huey_Armed_Green"];
 // Define spawn locations for AI Soldiers. These will be used for the initial spawning of AI as well as reinforcements.
 // The center spawn location is added 3 times so at least 3 AI will spawn initially at the center location, and so that future reinforcements are more likely to spawn at the center.
 _AISoldierSpawnLocations =	[
-								    [1025.28,1422.34,0],
+				    [1025.28,1422.34,0],
                                     [1098.39,1403.24,0],
                                     [1119.59,1500.45,0],
                                     [1212.74,1509.22,0],
@@ -149,7 +149,7 @@ _AISoldierSpawnLocations =	[
                                     [861.401,746.807,0],
                                     [1032.73,938.706,0],
                                     [1238.05,1340.31,0],
-	                                [588.088,668.877,0],
+	                            [588.088,668.877,0],
                                     [545.74,696.753,0],
                                     [540.958,730.721,0],
                                     [624.61,602.332,0],
@@ -190,15 +190,9 @@ _AISniperSpawnLocations = _AISniperSpawnLocations call ExileClient_util_array_sh
 
 // Vehicle patrol locations							
 _AIPatrolSpawnLocations = 	[
-								[1091.95,902.791,0],
-                                [561.14,769.167,0],
-                                [1015.75,1437.14,0],
-                                [1537.46,1809.13,0],
-                                [738.647,1478.55,0],
-                                [1456.04,1028.08,0],
-                                [1296.12,854.333,0],
-                                [497.872,1140.9,0]						
-							];
+				[1091.95,902.791,0],
+                                [561.14,769.167,0]
+                                ];
 // Shuffle the list of possible patrol spawn locations
 _AIPatrolSpawnLocations = _AIPatrolSpawnLocations call ExileClient_util_array_shuffle;							
 
@@ -262,7 +256,11 @@ _staticGuns =	[
 // add vehicle patrol
 _veh =	[
 			[
-				[981.478,1183.96,0]
+				[981.478,1183.96,0],
+				[1015.75,1437.14,0],
+                                [1537.46,1809.13,0],
+                                [738.647,1478.55,0],
+                                [1456.04,1028.08,0]
 			],
 			_group,
 			"assault",
